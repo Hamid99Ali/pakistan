@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .cont{
+            height: 1000px;
+            width: 1350px;
+            border: red 3px solid;
+            background-color: yellow;
+        }
+        .item {
+            margin: 12px 3px;
+            padding: 12px 3px;
+            height: 150px;
+            width: 150px;
+            border: red solid 3px;
+            display: inline-block;
+        }
+
+        /* By default the position of the item is the static */
+        /* #box3{
+
+            position: relative;
+            top: 124px;
+            right: 124px;
+         The item is move According to the it's normal position on the left and the right 
+        } */
+
+        /* #box3 {
+            position: absolute;
+            top: 123px;
+            right: 123px;
+            The position absolute is move the item According to the parents containor 
+        } */
+
+        /* #box3{
+            position: fixed;
+            right: 10px;
+            top: 45px;
+            position of the element relate to the browser window  
+        } */
+        #box3{
+            position:sticky;
+            right: 10px;
+            top: 45px;
+            /* position of the element relate tot he browser window stick on that position which one we select   */
+        }
+        
+
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="item" id="box1">1</div>
+        <div class="item" id="box2">2</div>
+        <div class="item" id="box3">3</div>
+        <div class="item" id="box4">4</div>
+    </div>
+</body>
+
+</html>

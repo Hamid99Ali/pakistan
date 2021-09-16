@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexible box</title>
+    <style>
+        .containor {
+            height: 100%;
+            width: 100%;
+            border: 2px black solid;
+            display: flex;
+
+            flex-direction: row;
+            /* By Default the vale of the flex-direction is the row */
+
+            /* flex-direction: column; */
+            /* This display the value of the item horizantal to the browser window */
+
+            /* flex-direction: column-reverse; */
+            /* This display the value in the reverse mode of the item this start from the bottom to the top */
+
+            /* flex-direction: row-reverse; */
+            /* This display the item from the right to the left */
+
+
+            /* (Defulat value is the nonwrap) */
+
+            /* flex-wrap: wrap; */
+            /* This will help us in the making the design responsive */
+
+            /* flex-wrap: wrap-reverse; */
+            /* This will reverse the propertie of the wrap prossess.  */
+
+
+            /* This is short hand of the to declare two value properties in the same line */
+            flex-flow: wrap row;
+            /* This is the short for the direction the flex-wrap */
+
+            justify-content: center;
+            /* This will justify the item according to the space or the window of the browser */
+
+            justify-content: space-between;
+            /* this will justify the content according to the space between them */
+
+            justify-content: space-around;
+            /* This will divide the SPACE according to the between them but at the end and the first there is less space then the between */
+            
+            justify-content: space-evenly;
+            /* This will divide the SPACE according to the side and the between them */
+
+            align-items: center;
+            /* this will center the item vertically to the parent containor */
+
+            align-items: flex-end;
+            /* This will position the item at the end or on the Bottom of the page */
+            
+            align-items: flex-start;
+            /* This will position the item at the start or top of the page */
+
+            align-items: stretch;
+            /* This will stretch the item and provide evenly space between them */
+
+        }
+        .items{
+            background-color: chocolate;
+            width: 15%;
+            margin: 12px;
+            padding: 12px;height: 15%;
+            border: darkgreen 2px solid ;
+            text-align: center;
+        }
+       #item1{
+           /* order: 3; */
+           /* Heiger the order the first the item showen  */
+           flex-grow: 2;
+           /* As the item has the flex grow number greater the vlaue of the growth on that time is great as number but we can use the nagitive number */
+           flex-basis: 234px;
+           /* If the flex-direction is row then it manage width  */ 
+           /* If the flex-direction is column then it manage Height  */ 
+       }
+       #item2{
+           /* order:2; */
+           flex-grow: 1;
+           flex-shrink: 3;
+           /* this work on the  */
+           transition-property: all;
+       }
+       /* #item3{ order: 4px;} */
+    </style>
+</head>
+
+<body>
+    <div class="containor">
+        <div class="items" id="item1">item1</div>
+        <div class="items" id="item2">item2</div>
+        <div class="items" id="item3">item3</div>
+        <!-- <div class="items" id="item4">item4</div>
+        <div class="items" id="item5">item5</div>
+        <div class="items" id="item6">item6</div> -->
+    </div>
+</body>
+
+</html>

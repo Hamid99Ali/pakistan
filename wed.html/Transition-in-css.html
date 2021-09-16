@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        background-color: black;
+    }
+    .class2{
+        display: flex;
+        height: 200px;
+        width: 200px;
+        background-color: red;
+        justify-content: center;
+        align-items: center;
+
+        /* transition-property: background-color; */
+        /* The name of the property that is you went to implement */
+
+        /* transition-duration: 1s; */
+        /* The time of the process to complete transitions  */
+
+        /* transition-timing-function:ease-in-out ; */
+        /* the method on which this the process is implemented */
+
+        /* transition-delay: 2s; */
+        /* The dealy time on which after the process is continue */
+
+        /* The shorthand to implement the last 4 lines in one line */
+        /* transition:background-color 1s ease-out 2s  ; */
+        
+        
+        /* if we went to all to apply all the properties then we replace the bacgound-color to all */
+        transition:all 1s ease-in .5s  ;
+
+
+    }
+    .class2:hover{
+        background-color: seashell;
+        width: 250px;
+        height: 400px;
+        border-radius: 6px;
+        font-size: 35px;
+        color: rgb(2, 2, 172);
+        background-color: rgb(231, 0, 46);
+
+    }
+</style>
+<body>
+    <div class="class1">
+        <div class="class2">This is my box</div>
+    </div>
+</body>
+</html>

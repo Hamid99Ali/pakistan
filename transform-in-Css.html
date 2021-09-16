@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform in Css</title>
+</head>
+<style>
+    .cont {
+        display: flex;
+        height: 80vh;
+        background-color: darkgoldenrod;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+
+    .conts {
+        background-color: red;
+        height: 150px;
+        width: 150px;
+        border: 2px solid black;
+        border-radius: 6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* First that all dynamic properties are applyable (all) Second(0.5)show the time how much time they rotate or apply the process Thrid show the (ease-in) that the ease(means easy when the propertie apply on it the go in easily inside   */
+        transition:all 0.5s ease-in  ;
+
+    }
+    .conts:hover{
+        /* This will rotate the box class */
+        transform: rotate(360deg);
+
+        /* This move it aside from the both end (like 3D effects) */
+        transform: skew(40deg);
+        
+        /* This increase the size on that time that writen in brakets(2) */
+        transform:scale(2);
+        
+        /* This will move the box or item pexil rightword that was writenin brackets(123px) */
+        transform: translatex(123px);
+        
+        /* This will move the box or item pexil downword that was writenin brackets(123px) */
+        transform: translatey(123px);
+        
+        /* This will move the box or item pexil downword and also  rightword was writenin brackets(123px,123PX) */
+        transform: translate(123px,123PX);
+
+    }
+</style>
+
+<body>
+    <div class="cont">
+        <div class="conts">
+            box
+        </div>
+    </div>
+
+</body>
+
+</html>
